@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CFE845B52A554B4500E3877A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE845B42A554B4500E3877A /* main.swift */; };
+		CFE845BC2A554B5200E3877A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE845BB2A554B5200E3877A /* Queue.swift */; };
+		CFE845BE2A5555EA00E3877A /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE845BD2A5555EA00E3877A /* Stack.swift */; };
+		CFE845C12A55592D00E3877A /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE845C02A55592D00E3877A /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		CFE845B12A554B4500E3877A /* Swift_DataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift_DataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE845B42A554B4500E3877A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CFE845BB2A554B5200E3877A /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		CFE845BD2A5555EA00E3877A /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		CFE845C02A55592D00E3877A /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,19 @@
 			isa = PBXGroup;
 			children = (
 				CFE845B42A554B4500E3877A /* main.swift */,
+				CFE845BF2A5556D300E3877A /* DataStructure */,
 			);
 			path = Swift_DataStructure;
+			sourceTree = "<group>";
+		};
+		CFE845BF2A5556D300E3877A /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				CFE845BB2A554B5200E3877A /* Queue.swift */,
+				CFE845BD2A5555EA00E3877A /* Stack.swift */,
+				CFE845C02A55592D00E3877A /* LinkedList.swift */,
+			);
+			path = DataStructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +138,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFE845B52A554B4500E3877A /* main.swift in Sources */,
+				CFE845BE2A5555EA00E3877A /* Stack.swift in Sources */,
+				CFE845C12A55592D00E3877A /* LinkedList.swift in Sources */,
+				CFE845BC2A554B5200E3877A /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
