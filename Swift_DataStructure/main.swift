@@ -33,10 +33,20 @@ import Foundation
 //}
 
 //MARK: - Linked List
-var linkedList = LinkedList<Int>()
+//var linkedList = LinkedList<Int>()
+//
+//for i in 1...10 {
+//    linkedList.append(data: i)
+//}
 
+//MARK: - Doubly LinkedList
+var DLink = DoublyLinkedList<Int>()
 for i in 1...10 {
-    linkedList.append(data: i)
+    DLink.append(data: i)
 }
 
-
+if let data = DLink.searchNodeFromTail(from: 1)?.data {
+    print(data)
+} else {
+    print("no exist")
+}
