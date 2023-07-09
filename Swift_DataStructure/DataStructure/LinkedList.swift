@@ -29,9 +29,6 @@ import Foundation
  Class는 Reference type이기 때문에 만약 next에 nil이 할당되면(인스턴스 참조 해제)
  ARC에 의해 자동으로 메모리에서 해제가 됨.
  
- 만약 Struct로 구현한다면 next에 값을 할당할 경우 동일한 인스턴스를 참조하는 것이 아니라
- 값을 복사해서 가지게 됨. 그럼 next에 nil을 할당한다 하더라도 원래의 node값은 next와는 독립적인 존재이기 때문에
- 메모리에 남게됨.
  */
 class Node<T> {
     var data: T?

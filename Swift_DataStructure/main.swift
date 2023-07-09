@@ -40,13 +40,45 @@ import Foundation
 //}
 
 //MARK: - Doubly LinkedList
-var DLink = DoublyLinkedList<Int>()
-for i in 1...10 {
-    DLink.append(data: i)
-}
+//var DLink = DoublyLinkedList<Int>()
+//for i in 1...10 {
+//    DLink.append(data: i)
+//}
+//
+//if let data = DLink.searchNodeFromTail(from: 1)?.data {
+//    print(data)
+//} else {
+//    print("no exist")
+//}
 
-if let data = DLink.searchNodeFromTail(from: 1)?.data {
-    print(data)
-} else {
-    print("no exist")
-}
+//MARK: - Binary Search Tree
+let bst = BST<Int>()
+bst.insert(35)
+bst.insert(10)
+bst.insert(40)
+bst.insert(1)
+bst.insert(30)
+bst.insert(8)
+bst.insert(32)
+bst.insert(6)
+bst.insert(9)
+bst.insert(34)
+bst.insert(21)
+bst.insert(27)
+
+bst.drawDiagram()
+
+// Leaf Node를 삭제하는 경우
+//print(bst.remove(for: 9))
+
+// 자식 노드가 1개인 노드를 삭제하는 경우
+//print(bst.remove(for: 32))
+//print(bst.remove(for: 30))
+
+// 자식 노드가 2개인 노드를 삭제하는 경우
+print(bst.remove(from: 10))
+
+
+
+bst.drawDiagram()
+
