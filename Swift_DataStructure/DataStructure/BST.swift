@@ -81,8 +81,7 @@ class BST<T: Comparable> {
     func remove(from data: T) -> Bool {
         guard let root = self.root, root.data != data else { return false }
 
-        // 탐색을 해야되는데,
-        // 삭제하려는 노드와 그 노드의 부모 노드도 알고 있어야 함
+        // 삭제하려면 탐색을 해야되는데, 삭제하려는 노드와 그 노드의 부모 노드도 알고 있어야 함
         var targetNode: BSTNode? = root
         var targetParentNode = root
 

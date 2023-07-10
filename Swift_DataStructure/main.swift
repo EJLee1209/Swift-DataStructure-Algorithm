@@ -7,6 +7,8 @@
 
 import Foundation
 
+//MARK: - 자료구조
+
 //MARK: - Queue
 //var queue = Queue<Int>()
 //
@@ -52,21 +54,21 @@ import Foundation
 //}
 
 //MARK: - Binary Search Tree
-let bst = BST<Int>()
-bst.insert(35)
-bst.insert(10)
-bst.insert(40)
-bst.insert(1)
-bst.insert(30)
-bst.insert(8)
-bst.insert(32)
-bst.insert(6)
-bst.insert(9)
-bst.insert(34)
-bst.insert(21)
-bst.insert(27)
-
-bst.drawDiagram()
+//let bst = BST<Int>()
+//bst.insert(35)
+//bst.insert(10)
+//bst.insert(40)
+//bst.insert(1)
+//bst.insert(30)
+//bst.insert(8)
+//bst.insert(32)
+//bst.insert(6)
+//bst.insert(9)
+//bst.insert(34)
+//bst.insert(21)
+//bst.insert(27)
+//
+//bst.drawDiagram()
 
 // Leaf Node를 삭제하는 경우
 //print(bst.remove(for: 9))
@@ -76,9 +78,21 @@ bst.drawDiagram()
 //print(bst.remove(for: 30))
 
 // 자식 노드가 2개인 노드를 삭제하는 경우
-print(bst.remove(from: 10))
+//print(bst.remove(from: 10))
 
+//bst.drawDiagram()
 
+//MARK: - 알고리즘
 
-bst.drawDiagram()
+var arr = [7,10,9,1,3]
+//MARK: - 버블 정렬
+//bubbleSort(&arr)
+
+//MARK: - 선택 정렬
+//SelectionSort(&arr)
+
+//MARK: - 삽입 정렬
+insertionSort(&arr)
+
+print(arr)
 
