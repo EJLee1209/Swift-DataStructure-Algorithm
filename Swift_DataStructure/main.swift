@@ -109,4 +109,7 @@ import Foundation
 //print(mergeSort([7, 10, 3, 9, 1]))
 
 //MARK: - 완전 탐색
-print(sequencial([1,2,3,4,5], num: 2))
+//print(sequencial([1,2,3,4,5], num: 2))
+
+//MARK: - 이진 탐색
+print(binarySearch([1,3,9,13,20,23,29,35], num: 9))
