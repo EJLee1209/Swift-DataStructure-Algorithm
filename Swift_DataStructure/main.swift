@@ -106,4 +106,7 @@ import Foundation
 //print(quickSort([7, 10, 3, 9, 1]))
 
 //MARK: - 합병 정렬
-print(mergeSort([7, 10, 3, 9, 1]))
+//print(mergeSort([7, 10, 3, 9, 1]))
+
+//MARK: - 완전 탐색
+print(sequencial([1,2,3,4,5], num: 2))
