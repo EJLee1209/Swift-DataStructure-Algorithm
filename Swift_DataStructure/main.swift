@@ -103,4 +103,7 @@ import Foundation
 //print(fiboWithDP(4))
 
 //MARK: - 퀵 정렬
-print(quickSort([7, 10, 3, 9, 1]))
+//print(quickSort([7, 10, 3, 9, 1]))
+
+//MARK: - 합병 정렬
+print(mergeSort([7, 10, 3, 9, 1]))
