@@ -84,7 +84,7 @@ import Foundation
 
 //MARK: - 알고리즘
 
-var arr = [7,10,9,1,3]
+//var arr = [7,10,9,1,3]
 //MARK: - 버블 정렬
 //bubbleSort(&arr)
 
@@ -92,7 +92,9 @@ var arr = [7,10,9,1,3]
 //SelectionSort(&arr)
 
 //MARK: - 삽입 정렬
-insertionSort(&arr)
+//insertionSort(&arr)
+//
+//print(arr)
 
-print(arr)
-
+//MARK: - 재귀함수
+print(factorialWithRecursive(4)) // 4!

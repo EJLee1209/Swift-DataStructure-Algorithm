@@ -23,6 +23,6 @@ func SelectionSort(_ arr: inout [Int]) {
                 minIdx = j
             }
         }
-        arr.swapAt(i, minIdx)
+        arr.swapAt(minIdx, i)
     }
 }

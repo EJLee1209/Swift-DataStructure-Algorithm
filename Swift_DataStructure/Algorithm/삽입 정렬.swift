@@ -19,17 +19,18 @@ import Foundation
  1. 처음에 1번째 인덱스를 기준으로 잡아
  2. 기준 인덱스 이전에 있는 값이랑 비교해서 이전 값이 크면 swap하고, 기준 인덱스보다 작은 값을 만날 때까지 반복
  3. 기준 인덱스를 다음 인덱스로 증가시키고, 다시 2번부터 수행
+ 
+ 시간복잡도 : O(n²)
  */
 
 func insertionSort(_ arr: inout [Int]) {
     for i in 1..<arr.count {
         for j in stride(from: i, to: 0, by: -1) {
-            if arr[j] > arr[j-1] {
-                arr.swapAt(j, j-1)
-            } else {
+            if arr[j-1] > arr[j] {
+                arr.swapAt(j-1, j)
+            }else {
                 break
             }
         }
     }
-    
 }

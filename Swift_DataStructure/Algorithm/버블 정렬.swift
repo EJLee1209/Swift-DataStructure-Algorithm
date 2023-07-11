@@ -15,10 +15,10 @@ import Foundation
  시간복잡도 : O(n²)
  */
 func bubbleSort(_ arr: inout [Int]) {
-    for i in 1..<arr.count {
-        for j in 1...arr.count-i {
-            if arr[j-1] > arr[j] {
-                arr.swapAt(j-1, j)
+    for i in 0..<arr.count-1 {
+        for j in 0..<arr.count-i-1 {
+            if arr[j] > arr[j+1] {
+                arr.swapAt(j, j+1)
             }
         }
     }
