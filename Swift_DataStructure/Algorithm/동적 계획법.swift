@@ -20,7 +20,7 @@ import Foundation
 
 /*
  피보나치 수열에서 n번째 값을 얻기 위한 함수를 재귀 함수로 작성하는 경우
- 이렇게 간단하게 구현할 수 있지만, 하나의 결과값을 도출하는데
+ 간단하게 구현할 수 있지만, 하나의 결과값을 도출하는데
  중복되는 값(이미 계산했던 값)을 얻기 위해 실행되는 함수가 너무 많음
  이러한 반복적인 연산을 부분 반복 문제(Overlapping Subproblem)이라고 함
  
@@ -30,7 +30,7 @@ import Foundation
  fibo(3) = fibo(2) + fibo(1) <-
  fibo(2) = fibo(1) + fibo(0)
  ...
- fibo(3) = fibo(2) + fibo(1) -> 어라 아까 이미 계산하지 않았나?? = Overlapping Subproblem
+ fibo(3) = fibo(2) + fibo(1) -> 어라 아까 이미 계산하지 않았나...? 근데 기억 안나니까(메모리에 없음) 다시 해야지 뭐... = Overlapping Subproblem
  ...
  */
 

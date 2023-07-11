@@ -100,4 +100,7 @@ import Foundation
 //print(factorialWithRecursive(4)) // 4!
 
 //MARK: - DP
-print(fiboWithDP(4))
+//print(fiboWithDP(4))
+
+//MARK: - 퀵 정렬
+print(quickSort([7, 10, 3, 9, 1]))
