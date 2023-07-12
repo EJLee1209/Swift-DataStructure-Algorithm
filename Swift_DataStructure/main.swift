@@ -118,14 +118,15 @@ import Foundation
 //}
 
 //MARK: - 너비 우선 탐색
-//let graph: [String: [String]] = [
-//    "A" : ["B", "C"],
-//    "B" : ["A", "D", "E"],
-//    "C" : ["A", "F"],
-//    "D" : ["B"],
-//    "E" : ["B"],
-//    "F" : ["C"]
-//]
+let graph: [String: [String]] = [
+    "A" : ["B", "C"],
+    "B" : ["A", "D", "E"],
+    "C" : ["A", "F"],
+    "D" : ["B"],
+    "E" : ["B"],
+    "F" : ["C"]
+]
 //print(BFS(graph: graph, start: "A"))
 
-
+//MARK: - 깊이 우선 탐색
+print(DFS(graph: graph, start: "A"))
