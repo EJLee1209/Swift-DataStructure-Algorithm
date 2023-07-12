@@ -112,4 +112,20 @@ import Foundation
 //print(sequencial([1,2,3,4,5], num: 2))
 
 //MARK: - 이진 탐색
-print(binarySearch([1,3,9,13,20,23,29,35], num: 9))
+//print(binarySearch([1,3,9,13,20,23,29,35], num: 33))
+//[1,3,9,13,20,23,29,35,2312,123,23].forEach { v in
+//    print(binarySearchWithRecursive([1,3,9,13,20,23,29,35], num: v))
+//}
+
+//MARK: - 너비 우선 탐색
+//let graph: [String: [String]] = [
+//    "A" : ["B", "C"],
+//    "B" : ["A", "D", "E"],
+//    "C" : ["A", "F"],
+//    "D" : ["B"],
+//    "E" : ["B"],
+//    "F" : ["C"]
+//]
+//print(BFS(graph: graph, start: "A"))
+
+

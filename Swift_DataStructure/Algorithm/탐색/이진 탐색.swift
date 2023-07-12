@@ -26,28 +26,27 @@ import Foundation
 func binarySearch(_ arr: [Int], num: Int) -> Bool {
     var start = 0
     var end = arr.count - 1
-    
     while start <= end {
         let mid = (start + end) / 2
-        if arr[mid] == num { return true }
-        else if arr[mid] > num {
+        if arr[mid] == num {
+            return true
+        }
+        if arr[mid] > num {
             end = mid - 1
-        } else {
+        } else{
             start = mid + 1
         }
     }
-    
     return false
 }
 
 // 재귀함수로 구현
 func binarySearchWithRecursive(_ arr: [Int], num: Int) -> Bool {
-    if arr.count <= 1 {
-        return arr[0] == num ? true : false
-    }
-    let mid = arr.count / 2
-    if arr[mid] == num { return true }
-    let range = arr[mid] > num ? (0..<mid) : ((mid + 1)..<arr.count)
+    if arr.count <= 1 { return arr[0] == num }
     
-    return binarySearchWithRecursive(Array(arr[range]), num: num)
+    let mid = (arr.count-1) / 2
+    
+    if num == arr[mid] { return true }
+    let nextArray = num > arr[mid] ? arr[(mid+1)...] : arr[..<mid]
+    return binarySearchWithRecursive(Array(nextArray), num: num)
 }
